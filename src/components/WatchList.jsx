@@ -38,7 +38,7 @@ const Watchlist = () => {
   
   const fetchMovieDetails = async (imdbID) => {
     try {
-        const response = await axios.get(`http://www.omdbapi.com/?i=${imdbID}&apikey=d5a5a1ab`);
+        const response = await axios.get(`https://www.omdbapi.com/?i=${imdbID}&apikey=d5a5a1ab`);
       console.log(response.data);
       return response.data;
     
