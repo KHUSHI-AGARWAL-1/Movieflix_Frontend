@@ -23,7 +23,7 @@ const MovieCard = ({ movie }) => {
      else {
         try {
             console.log(userId);
-            const response = await axios.post('https://movieflix-backend-rj9a.onrender.com/watchlist/add', {
+            const response = await axios.post('http://localhost:8080/watchlist/add', {
                 userId: userId, 
                 movieId: movieId
             });
@@ -50,7 +50,7 @@ const MovieCard = ({ movie }) => {
                 <span>{movie.Type}</span> 
                 <h3>{movie.Title}</h3> 
               
-                <Link to={`/#/info/${movie.imdbID}`} className='button'>View</Link>
+                <Link to={`/info/${movie.imdbID}`} className='button'>View</Link>
                 {!isAdded ? (
 
                     <button className='button' onClick={() => addToWatchlist(movie.imdbID)}>+ WatchList</button>
