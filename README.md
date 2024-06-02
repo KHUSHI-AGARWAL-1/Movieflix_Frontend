@@ -15,4 +15,4 @@ The Movie Search App is a full-stack application that allows users to sign up an
 - **Database**: MongoDB
 - **Authentication**: JSON Web Tokens (JWT)
 
-Link:
+Link: https://movieflix-frontend.vercel.app/
