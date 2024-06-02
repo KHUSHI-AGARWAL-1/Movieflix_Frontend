@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import MovieCard from './MovieCard';
 import '../styles/Hero.css'
-const API_URL = 'http://www.omdbapi.com/?i=tt3896198&apikey=d5a5a1ab';
+const API_URL = 'https://www.omdbapi.com/?i=tt3896198&apikey=d5a5a1ab';
 
 function Hero() {
     const [movies, setMovies] = useState([]);
