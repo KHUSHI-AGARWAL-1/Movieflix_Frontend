@@ -9,6 +9,7 @@ const Watchlist = () => {
   const [movieDetails, setMovieDetails] = useState([]);
   const [authuser] = useAuth(); 
   const userId = authuser ? authuser._id : null; 
+const [change,setchange]= useState(false);
 
   useEffect(() => {
     if (!userId) return; 
@@ -20,16 +21,17 @@ const Watchlist = () => {
       .catch(error => {
         console.error('Error fetching watchlist:', error);
       });
-  }, [userId]); 
+  }, [change,userId]); 
 
   const removeFromWatchlist = async (movieId) => {
    await axios.post('https://movieflix-backend-rj9a.onrender.com/watchlist/remove', { userId: userId, movieId: movieId })
       .then(response => {
         console.log(response.data);
+        setchange(prevChange => !prevChange); 
         toast.success("Movie removed from WatchList", { duration: 1000 })
-        setTimeout(() => {
-           window.location.reload();
-        }, 1000);
+        // setTimeout(() => {
+        //    window.location.reload();
+        // }, 1000);
       })
       .catch(error => {
         console.error('Error removing movie from watchlist:', error);
