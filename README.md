@@ -1,12 +1,18 @@
-<<<<<<< HEAD
-# React + Vite
+# Movie Search App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+The Movie Search App is a full-stack application that allows users to sign up and log in, search for movies, view detailed information about them, and manage a personalized watchlist. The application is built using the MERN stack (MongoDB, Express.js, React, Node.js).
 
-Currently, two official plugins are available:
+## Features
+- **User Authentication**: Signup and login functionality to access the app.
+- **Movie Search**: Search for movies by title.
+- **Movie Details**: View detailed information about a movie including genre, category, and other details.
+- **Watchlist Management**: Add movies to and remove movies from a personalized watchlist.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-=======
-# Movieflix_Frontend
->>>>>>> origin/main
+## Tech Stack
+- **Frontend**: React
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **Authentication**: JSON Web Tokens (JWT)
+
+Link:
