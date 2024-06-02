@@ -23,7 +23,7 @@ const MovieCard = ({ movie }) => {
      else {
         try {
             console.log(userId);
-            const response = await axios.post('http://localhost:8080/watchlist/add', {
+            const response = await axios.post('https://movieflix-backend-rj9a.onrender.com/watchlist/add', {
                 userId: userId, 
                 movieId: movieId
             });
